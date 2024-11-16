@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.KonstantinovaJN.Sprin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.KonstantinovaJN.Sprint2.Task2.V12.Lib", "Tyuiu.KonstantinovaJN.Sprint2.Task2.V12.Lib\Tyuiu.KonstantinovaJN.Sprint2.Task2.V12.Lib.csproj", "{59557C73-D366-4600-8FD1-462F84F25E9D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3", "Task3", "{204EDFA6-91BE-49BD-844A-0479465AE16E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
