@@ -26,7 +26,7 @@ namespace Tyuiu.KonstantinovaJN.Sprint1.Task0.V1
             Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
             Console.WriteLine("* последовательность операций не должна нарушаться) и арифметических      *");
             Console.WriteLine("* выражений, которая вернет логическую последовательность(массив):        *");
-            Console.WriteLine("* (False, True, False, True, False, True), при x = 333, y = 324           *");
+            Console.WriteLine("* (False, True, False, True, False, True), при x = 333, y = 324.          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
