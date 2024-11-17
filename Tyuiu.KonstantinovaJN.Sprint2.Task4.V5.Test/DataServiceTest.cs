@@ -22,9 +22,9 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task4.V5.Test
         {
             DataService ds = new DataService();
             double x = 5;
-            double y = 1;
+            double y = 7;
             double res = ds.Calculate(x, y);
-            double wait = 1251;
+            double wait = 75.143;
             Assert.AreEqual(wait, res);
         }
     }
