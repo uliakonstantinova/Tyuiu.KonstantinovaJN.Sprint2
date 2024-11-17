@@ -21,10 +21,10 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task4.V5.Test
         public void ValidCondition2()
         {
             DataService ds = new DataService();
-            double x = 7;
+            double x = 5;
             double y = 1;
             double res = ds.Calculate(x, y);
-            double wait = 17.086;
+            double wait = 1251;
             Assert.AreEqual(wait, res);
         }
     }
