@@ -36,7 +36,7 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Lib
                 }
             }
 
-            return $"{n}/{m}/{g}";
+            return $"{n}.{m}.{g}";
         }
 
         private bool IsLeapYear(int year)
