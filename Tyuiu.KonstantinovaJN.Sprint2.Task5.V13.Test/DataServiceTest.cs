@@ -9,20 +9,20 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Test
         {
             DataService ds = new DataService();
          
-            Assert.AreEqual("1/3/2024", ds.FindDateOfNextDay(2024, 2, 29));
-            Assert.AreEqual("1/1/2024", ds.FindDateOfNextDay(2023, 12, 31));
-            Assert.AreEqual("1/5/2023", ds.FindDateOfNextDay(2023, 4, 30));
-            Assert.AreEqual("1/12/2023", ds.FindDateOfNextDay(2023, 11, 30));
+            Assert.AreEqual("01/03/2024", ds.FindDateOfNextDay(2024, 02, 29));
+            Assert.AreEqual("01/01/2024", ds.FindDateOfNextDay(2023, 12, 31));
+            Assert.AreEqual("01/05/2023", ds.FindDateOfNextDay(2023, 04, 30));
+            Assert.AreEqual("01/12/2023", ds.FindDateOfNextDay(2023, 11, 30));
 
-            Assert.AreEqual("1/4/2023", ds.FindDateOfNextDay(2023, 3, 31));
-            Assert.AreEqual("1/2/2024", ds.FindDateOfNextDay(2024, 1, 31));
+            Assert.AreEqual("01/04/2023", ds.FindDateOfNextDay(2023, 03, 31));
+            Assert.AreEqual("01/02/2024", ds.FindDateOfNextDay(2024, 01, 31));
 
-            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 13, 1));
-            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 2, 30));
-            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 2, 29));
+            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 13, 01));
+            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 02, 30));
+            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 02, 29));
 
-            Assert.AreEqual("1/3/2020", ds.FindDateOfNextDay(2020, 2, 29));
-            Assert.AreEqual("1/3/2020", ds.FindDateOfNextDay(2020, 2, 28));
+            Assert.AreEqual("01/03/2020", ds.FindDateOfNextDay(2020, 02, 29));
+            Assert.AreEqual("01/03/2020", ds.FindDateOfNextDay(2020, 02, 28));
         }
     }
 }
