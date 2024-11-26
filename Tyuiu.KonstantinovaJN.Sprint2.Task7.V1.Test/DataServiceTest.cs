@@ -10,8 +10,8 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task7.V1.Test
         {
             DataService ds = new DataService();
 
-            double x = 0.8;
-            double y = 0.7;
+            double x = 0.5;
+            double y = 0.5;
 
             bool res = ds.CheckDotInShadedArea(x, y);
 

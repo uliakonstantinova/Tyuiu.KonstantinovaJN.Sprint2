@@ -9,7 +9,7 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task7.V1.Lib
         public bool CheckDotInShadedArea(double x, double y)
         {
             bool res;
-            if ((y > -x && y < x) && (x > 0 && x <= 1) && (y > 0 && y <= 1))
+            if ((y >= -x && y <= x) && x + y <= 1)
             {
                 res = true;
             }
