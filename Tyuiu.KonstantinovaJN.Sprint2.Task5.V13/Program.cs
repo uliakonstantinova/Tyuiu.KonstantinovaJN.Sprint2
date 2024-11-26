@@ -1,4 +1,5 @@
 ﻿using Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Lib;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Tyuiu.KonstantinovaJN.Sprint2.Task3.V26
 {
@@ -32,9 +33,9 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task3.V26
             int m = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите год: ");
             int g = Convert.ToInt32(Console.ReadLine());
-
+            
             res = ds.FindDateOfNextDay(n, m, g);
-
+            Console.WriteLine(res.ToString());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
