@@ -6,7 +6,7 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Lib
     {
         public string FindDateOfNextDay(int g, int m, int n)
         {
-            if (m < 1 || m > 12 || n < 1 || n > 31)
+            if (m < 01 || m > 12 || n < 01 || n > 31)
         {
                 return "Некорректная дата";
             }
@@ -24,10 +24,10 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Lib
             }
             else
             {
-                n = 1;
+                n = 01;
                 if (m == 12)
                 {
-                    m = 1;
+                    m = 01;
                     g++;
                 }
                 else
@@ -35,6 +35,8 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Lib
                     m++;
                 }
             }
+            DateTime date = new DateTime(n, m, g);
+            date = date.AddDays(1);
 
             return $"{n}.{m}.{g}";
         }

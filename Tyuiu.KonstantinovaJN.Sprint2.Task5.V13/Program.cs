@@ -33,13 +33,14 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task3.V26
             int m = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите год: ");
             int g = Convert.ToInt32(Console.ReadLine());
-            
+
             res = ds.FindDateOfNextDay(n, m, g);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }
