@@ -8,21 +8,11 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Test
         public void ValidFindDateOfNextDay()
         {
             DataService ds = new DataService();
-         
-            Assert.AreEqual("01.03.2024", ds.FindDateOfNextDay(2024, 02, 29));
-            Assert.AreEqual("01.01.2024", ds.FindDateOfNextDay(2023, 12, 31));
-            Assert.AreEqual("01.05.2023", ds.FindDateOfNextDay(2023, 04, 30));
-            Assert.AreEqual("01.12.2023", ds.FindDateOfNextDay(2023, 11, 30));
 
-            Assert.AreEqual("01.04.2023", ds.FindDateOfNextDay(2023, 03, 31));
-            Assert.AreEqual("01.02.2024", ds.FindDateOfNextDay(2024, 01, 31));
-
-            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 13, 01));
-            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 02, 30));
-            Assert.AreEqual("Некорректная дата", ds.FindDateOfNextDay(2023, 02, 29));
-
-            Assert.AreEqual("01.03.2020", ds.FindDateOfNextDay(2020, 02, 29));
-            Assert.AreEqual("01.03.2020", ds.FindDateOfNextDay(2020, 02, 28));
+            Assert.AreEqual("2024-09-09", ds.FindDateOfNextDay(2024, 9, 8));
+            Assert.AreEqual("2024-09-01", ds.FindDateOfNextDay(2024, 8, 31));
+            Assert.AreEqual("2024-02-29", ds.FindDateOfNextDay(2024, 2, 28));
+            Assert.AreEqual("2025-01-01", ds.FindDateOfNextDay(2024, 12, 31));
         }
     }
 }

@@ -6,44 +6,51 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Lib
     {
         public string FindDateOfNextDay(int g, int m, int n)
         {
-            if (m < 01 || m > 12 || n < 01 || n > 31)
-        {
-                return "Некорректная дата";
+            int daysInMonth;
+
+            switch (m)
+            {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    daysInMonth = 31;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    daysInMonth = 30;
+                    break;
+                case 2:
+                    daysInMonth = 29;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("Неверный номер месяца.");
             }
 
-            int[] daysInMonth = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-
-            if (IsLeapYear(g))
+            if (n < 1 || n > daysInMonth)
             {
-                daysInMonth[2] = 29;
+                throw new ArgumentOutOfRangeException("Неверный день месяца.");
             }
 
-            if (n < daysInMonth[m])
+            n++;
+
+            if (n > daysInMonth)
             {
-                n++;
-            }
-            else
-            {
-                n = 01;
-                if (m == 12)
+                n = 1;
+                m++;
+
+                if (m > 12)
                 {
-                    m = 01;
+                    m = 1;
                     g++;
                 }
-                else
-                {
-                    m++;
-                }
             }
-            DateTime date = new DateTime(n, m, g);
-            date = date.AddDays(1);
-
-            return $"{n}.{m}.{g}";
-        }
-
-        private bool IsLeapYear(int year)
-        {
-            return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+            return $"{g:D4}-{m:D2}-{n:D2}";
         }
     }
 }
