@@ -50,7 +50,7 @@ namespace Tyuiu.KonstantinovaJN.Sprint2.Task5.V13.Lib
                     g++;
                 }
             }
-            return $"{g:D4}-{m:D2}-{n:D2}";
+            return $"{n:D2}.{m:D2}.{g:D4}";
         }
     }
 }
